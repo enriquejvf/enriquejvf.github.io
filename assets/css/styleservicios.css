@@ -117,6 +117,11 @@ header::after {
   width: 135px;
 }
 
+.navbar .imglogo{
+  width: 200px;
+  height: auto;
+}
+
 .navbar-collapse .search-form input[type="text"] {
   border: 1px solid #ced4da; 
   color: #333;
@@ -216,6 +221,73 @@ form button.btn-primary:hover {
   flex-basis: 48%;
 }
 
+/*-----------------------------------
+    1 - texto
+------------------------------------*/
+.container {
+  color: #ccc;
+}
+.container .nostexto {
+  color: darkblue;
+  padding: 10px;
+}
+.container .nostexto p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.container .nostexto h3 a {
+  color: darkblue;
+  font-weight: 600;
+}
+.container .nostexto > ul li {
+  list-style-image: url("../images/iconparitysmall.png");
+  list-style-type: none;
+  /* background-repeat: no-repeat; */
+  /* line-height: 10px; */
+  padding-left: 10px;
+  font-size: 16px;
+  /* margin-top: 20px */
+}
+
+.sservicios .img-microfinanzas{
+  background-image: url("../images/img-microfinanzas.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-position: center center; */
+  background-size: 100% auto;
+  width: 100%;
+  height: 200px;
+}
+.row > .column {
+  padding: 0 8px;
+}
+/* .row > .column img {
+  width: 10%;
+} */
+.column {
+  float: left;
+  width: 10%;
+}
+
+.imgtxt{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.leftcenter {
+  position: absolute;
+  top: 50%;
+  /* left: 25%; */
+  transform: translate(0%, -50%); /* translate(-50%, -50%) */
+}
+.leftcenter h1{
+  color: white; 
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.56);
+  text-transform: uppercase;
+  -webkit-transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
+          transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
+  font-weight: bold;
+}
 /*-----------------------------------
     1 - Hero
 ------------------------------------*/

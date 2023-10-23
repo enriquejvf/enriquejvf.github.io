@@ -117,6 +117,10 @@ header::after {
   width: 135px;
 }
 
+.navbar .imglogo{
+  width: 200px;
+  height: auto;
+}
 .navbar-collapse .search-form input[type="text"] {
   border: 1px solid #ced4da; 
   color: #333;
