@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="map"></div>
+</body>
+
+
+
+<script type="text/javascript">
+
+    var points = [
+        ["Bolivia", -16.290154,-63.588653],
+        ["Chile", -35.675147,-71.542969],
+        ["Colombia", 4.570868,-74.297333],
+        ["Costa Rica", 9.748917,-83.753428],
+        ["El Salvador", 13.794185,-88.89653],
+        ["Estados Unidos", 37.09024,-95.712891],
+        ["Guatemala", 15.783471,-90.230759],
+        ["Holanda", 52.132633,5.291266],
+        ["Honduras", 15.199999,-86.241905],
+        ["Italia", 41.87194,12.56738],
+        ["Kenia", -0.023559,37.906193],
+        ["Mexico", 23.634501,-102.552784],
+        ["Nicaragua", 12.865416,-85.207229],
+        ["Panama", 8.537981,-80.782127],
+        ["Paraguay", -23.442503,-58.443832],
+        ["Peru", -9.189967,-75.015152]
+    ];
+
+    //create map object and set default positions and zoom level
+    var map = L.map('map').setView([20, 0], 2);
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
+
+    var Icon = L.icon({
+        iconUrl: 'http://myinspirationinformation.com/wp-content/uploads/2015/12/logoAndName.png',
+        //shadowUrl: 'http://leafletjs.com/docs/images/leaf-shadow.png',
+
+        iconSize: [20, 20], // size of the icon
+        //shadowSize:   [50, 64], // size of the shadow
+        iconAnchor: [10, 20], // point of the icon which will correspond to marker's location
+        //shadowAnchor: [4, 62],  // the same for the shadow
+        popupAnchor: [0, -10] // point from which the popup should open relative to the iconAnchor
+    });
+
+    for (var i = 0; i < points.length; i++) {
+        //L.marker([points[i][1], points[i][2]], { icon: Icon }).bindPopup(points[i][0]).addTo(map);
+        // L.marker([points[i][1], points[i][2]], { icon: L.icon.glyph({ prefix: 'mdi', glyph: 'school' }) }).bindPopup(points[i][0]).addTo(map);
+        L.marker([points[i][1], points[i][2]]).bindPopup(points[i][0]).addTo(map);
+    }
+
+
+</script>
+</body>
+
+</html>
