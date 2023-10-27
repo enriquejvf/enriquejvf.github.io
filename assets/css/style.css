@@ -240,15 +240,6 @@ form button.btn-primary:hover {
   width: 100%;
 }
 
-.hero .img-cuadrante {
-  background-image: url("../images/img-cuadrante.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: auto 100%;
-  background-position-x: right;
-  /* width: 100%; */
-}
-
 .hero .slide-content span {
   color: #3949ab;
   /*  #ee1515;  */
@@ -268,7 +259,7 @@ form button.btn-primary:hover {
   /* #170936;*/
   -webkit-transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
   transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
-  padding: 35px 0 35px 30px;
+  padding: 35px 30px 35px 30px;
   background-color: rgba(11, 83, 69, 0.50);
   /* rgba(00, 137, 123, 0.50);   rgba(255, 255, 255, 0.51);*/
   border-top-right-radius: 100px;
@@ -678,16 +669,16 @@ form button.btn-primary:hover {
 }
 
 .area-content .cuaul {
-				/* fallback color */
-				background-color: greenyellow; 
-				/* Firefox 3.6+  -moz-linear-gradient(#336666, #66cccc);  */
-				background-image: -moz-linear-gradient(#336666, greenyellow);
-				/* Safari 4+, Chrome 1+  -webkit-gradient(linear, 0% 0%, 0% 100%, from(#66cccc), to(#336666)); */
-				/* background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(greenyellow), to(#336666)); */
-				/* Safari 5.1+, Chrome 10+  -webkit-linear-gradient(#336666, #66cccc); */
-				background-image: -webkit-linear-gradient(#336666, greenyellow); 
-				/* Opera 11.10+  -o-linear-gradient(#336666, #66cccc);*/
-				background-image: -o-linear-gradient(#336666, greenyellow);
+  /* fallback color */
+  background-color: #A9DFBF;
+  /* Firefox 3.6+  -moz-linear-gradient(#336666, #66cccc);  */
+  background-image: -moz-linear-gradient(45deg, #28B463, #A9DFBF);
+  /* Safari 4+, Chrome 1+  -webkit-gradient(linear, 0% 0%, 0% 100%, from(#66cccc), to(#336666)); */
+  /* background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(greenyellow), to(#336666)); */
+  /* Safari 5.1+, Chrome 10+  -webkit-linear-gradient(#336666, #66cccc); */
+  background-image: -webkit-linear-gradient(45deg, #28B463, #A9DFBF);
+  /* Opera 11.10+  -o-linear-gradient(#336666, #66cccc);*/
+  background-image: -o-linear-gradient(45deg, #28B463, #A9DFBF);
 
   color: darkblue;
   padding: 5px;
@@ -699,7 +690,11 @@ form button.btn-primary:hover {
 }
 
 .area-content .cuaur {
-  background-color: black;
+  /* fallback color */
+  background-color: #212F3C;
+  background-image: -moz-linear-gradient(45deg, #212F3C, #566573);
+  background-image: -webkit-linear-gradient(45deg, #212F3C, #808B96);
+  background-image: -o-linear-gradient(45deg, #212F3C, #808B96);
   color: white;
   padding: 5px;
 }
@@ -710,7 +705,11 @@ form button.btn-primary:hover {
 }
 
 .area-content .cuadl {
-  background-color: black;
+  /* fallback color */
+  background-color: #212F3C;
+  background-image: -moz-linear-gradient(45deg, #212F3C, #566573);
+  background-image: -webkit-linear-gradient(45deg, #212F3C, #808B96);
+  background-image: -o-linear-gradient(45deg, #212F3C, #808B96);
   color: white;
   padding: 5px;
 }
@@ -721,7 +720,16 @@ form button.btn-primary:hover {
 }
 
 .area-content .cuadr {
-  background-color: greenyellow;
+  /* fallback color */
+  background-color: #A9DFBF;
+  /* Firefox 3.6+  -moz-linear-gradient(#336666, #66cccc);  */
+  background-image: -moz-linear-gradient(45deg, #28B463, #A9DFBF);
+  /* Safari 4+, Chrome 1+  -webkit-gradient(linear, 0% 0%, 0% 100%, from(#66cccc), to(#336666)); */
+  /* background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(greenyellow), to(#336666)); */
+  /* Safari 5.1+, Chrome 10+  -webkit-linear-gradient(#336666, #66cccc); */
+  background-image: -webkit-linear-gradient(45deg, #28B463, #A9DFBF);
+  /* Opera 11.10+  -o-linear-gradient(#336666, #66cccc);*/
+  background-image: -o-linear-gradient(45deg, #28B463, #A9DFBF);
   color: darkblue;
   padding: 5px;
 }

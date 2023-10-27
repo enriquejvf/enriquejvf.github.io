@@ -239,13 +239,52 @@ form button.btn-primary:hover {
   color: darkblue;
   font-weight: 600;
 }
+
+.container .nostexto button {
+  background-color:  #EBF5FB; /* #eee;*/
+  /* color:    #444; */
+  color: darkblue;
+  cursor: pointer;
+  padding: 10px 5px 10px 5px;
+  margin: 0;
+  width: 100%;
+  /* text-align: left; */
+  border: none;
+  outline: none;
+  transition: 0.4s;
+
+  font-weight: 600;
+  font-size: large;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+/*
+  color: darkblue;
+  font-weight: 600;
+   width: 100%; 
+  background-color: white;
+  border: none;
+  text-align: left;*/
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.container .nostexto button:hover {
+  background-color: rgba(125, 206, 160, 0.56);  /*#7DCEA0   RGB   125, 206, 160  */
+}
+.container .nostexto .accordion h4{
+  font-weight: 600;
+  font-size: large;
+
+}
+
+
 .container .nostexto > ul li {
   list-style-image: url("../images/iconparitysmall.png");
   list-style-type: none;
   /* background-repeat: no-repeat; */
   /* line-height: 10px; */
   padding-left: 10px;
-  font-size: 16px;
+  font-size: large;
   /* margin-top: 20px */
 }
 
