@@ -89,12 +89,12 @@
         if ($('.clients-slider').length) {
             var swiper = new Swiper('.clients-slider', {
                 autoplay: {
-                    delay: 2500,
+                    delay: 2000,
                     disableOnInteraction: true,
                 },
                 speed: 900,
                 loop: true,
-                slidesPerView: 5,
+                slidesPerView: 6,
                 breakpoints: {
                     1200: {
                         slidesPerView: 4
@@ -143,6 +143,16 @@
         //   // increase value up to 10, then refresh AOS
         //   scrollRef <= 10 ? scrollRef++ : AOS.refresh();
         // });
+        /*
+        var image = document.querySelector("imgflipagricultura");
+
+        // Obtiene la altura dinámica de la imagen
+        var dynamicHeight = image.offsetHeight;
+
+        // Haz lo que necesites con la altura dinámica
+        console.log("Altura dinámica de la imagen: " + dynamicHeight + "px");
+        */
+
 
     });
 })(jQuery)

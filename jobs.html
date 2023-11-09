@@ -13,17 +13,21 @@
         body {
             height: 100%;
             width: 100%;
-
+            margin: 0;
         }
 
-        body {
+        p {
+            padding: 0;
             margin: 0;
+        }
+
+        ul {
+            padding-left: 15px;
         }
 
         #map {
             width: 100%;
             height: 100%;
-
         }
     </style>
 
@@ -38,22 +42,33 @@
 <script type="text/javascript">
 
     var points = [
-        ["Bolivia", -16.290154,-63.588653],
-        ["Chile", -35.675147,-71.542969],
-        ["Colombia", 4.570868,-74.297333],
-        ["Costa Rica", 9.748917,-83.753428],
-        ["El Salvador", 13.794185,-88.89653],
-        ["Estados Unidos", 37.09024,-95.712891],
-        ["Guatemala", 15.783471,-90.230759],
-        ["Holanda", 52.132633,5.291266],
-        ["Honduras", 15.199999,-86.241905],
-        ["Italia", 41.87194,12.56738],
-        ["Kenia", -0.023559,37.906193],
-        ["Mexico", 23.634501,-102.552784],
-        ["Nicaragua", 12.865416,-85.207229],
-        ["Panama", 8.537981,-80.782127],
-        ["Paraguay", -23.442503,-58.443832],
-        ["Peru", -9.189967,-75.015152]
+        ["Bolivia", -16.290154, -63.588653, "<h2>Bolivia</h2><p>Nuestros clientes:</p><ul><li>Aned</li><li>Francesa Empresarial</li><li>Fubode IFD</li><li>Foncresol</li><li>CIDRE IFD</li><li>MicroJusticia Bolivia</li><li>ILA</li><li>ProMujer</li><li>VisionFund Internacional</li><li>Soluciones Practicas</li><li>Capital SAFI SA</li><li>MicroSave</li><li>Banco Sol</li><li>Fundacion Codespa</li><li>Media</li><li>Incofin</li><li>BID</li><li>Sembrar</li><li>Symbiotics</li></ul>"],
+        ["Afganistan", 33.93911, 67.709953, "<h2>Afganistan</h2><p>Nuestros clientes:</p><ul><li>Brac Afghanistan</li><li>Oxus</li></ul>"],
+        ["Burkina Faso", 12.238333, -1.561593, "<h2>Burkina Faso</h2><p>Nuestros clientes:</p><ul><li>FIDELIS Finance</li></ul>"],
+        ["Chile", -35.675147, -71.542969, "<h2>Chile</h2><p>Nuestros clientes:</p><ul><li>CEPAL</li></ul>"],
+        ["Colombia", 4.570868, -74.297333, "<h2>Colombia</h2><p>Nuestros clientes:</p><ul><li>Incofin</li></ul>"],
+        ["Costa Rica", 9.748917, -83.753428, "<h2>Costa Rica</h2><p>Nuestros clientes:</p><ul><li>MiCredito</li></ul>"],
+        ["Ecuador", -1.831239, -78.183406, "<h2>Ecuador</h2><p>Nuestros clientes:</p><ul><li>Fundacion ESPOIR</li></ul>"],
+        ["El Salvador", 13.794185, -88.89653, "<h2>El Salvador</h2>"],
+        ["Estados Unidos", 37.09024, -95.712891, "<h2>Estados Unidos</h2><p>Nuestros clientes:</p><ul><li>BOULDER Institute of Microfinance</li></ul>"],
+        ["Ghana", 7.946527, -1.023194, "<h2>Ghana</h2><p>Nuestros clientes:</p><ul><li>First Allied</li></ul>"],
+        ["Guatemala", 15.783471, -90.230759, "<h2>Guatemala</h2><p>Nuestros clientes:</p><ul><li>Incofin</li><li>Fundea</li></ul>"],
+        ["Haiti", 18.971187, -72.285215, "<h2>Haiti</h2><p>Nuestros clientes:</p><ul><li>Fonkoze</li></ul>"],
+        ["Holanda", 52.132633, 5.291266, "<h2>Holanda</h2>"],
+        ["Honduras", 15.199999, -86.241905, "<h2>Honduras</h2><p>Nuestros clientes:</p><ul><li>Red Katalysis</li><li>Coagricsal</li><li>Banco Popular</li><li>CoopSama</li></ul>"],
+        ["Italia", 41.87194, 12.56738, "<h2>Italia</h2><p>Nuestros clientes:</p><ul><li>BOULDER Institute of Microfinance</li><li>Frankfurt School - UNEP Collaborating Centre</li></ul>"],
+        ["Jordania", 30.585164, 36.238414, "<h2>Jordania</h2><p>Nuestros clientes:</p><ul><li>FINCA</li></ul>"],
+        ["Kenia", -0.023559, 37.906193, "<h2>Kenia</h2><p>Nuestros clientes:</p><ul><li>MYC4</li><li>GA</li><li>MicroSave</li><li>JamiiBora Bank</li></ul>"],
+        ["Malawi", -13.254308, 34.301525, "<h2>Malawi</h2><p>Nuestros clientes:</p><ul><li>Opportunity Bank</li></ul>"],
+        ["Mexico", 23.634501, -102.552784, "<h2>Mexico</h2><p>Nuestros clientes:</p><ul><li>DAI</li><li>FINCA</li></ul>"],
+        ["Moldavia", 47.411631, 28.369885, "<h2>Moldavia</h2><p>Nuestros clientes:</p><ul><li>MicroInvest</li></ul>"],
+        ["Nicaragua", 12.865416, -85.207229, "<h2>Nicaragua</h2><p>Nuestros clientes:</p><ul><li>Faceta Central</li></ul>"],
+        ["Panama", 8.537981, -80.782127, "<h2>Panama</h2><p>Nuestros clientes:</p><ul><li>MicroSerFin</li></ul>"],
+        ["Palestina", 31.952162, 35.233154, "<h2>Palestina</h2><p>Nuestros clientes:</p><ul><li>ASALA</li></ul>"],
+        ["Paraguay", -23.442503, -58.443832, "<h2>Paraguay</h2><p>Nuestros clientes:</p><ul><li>Financiera El Comercio</li><li>Incofin</li><li>Micro Service Consult</li></ul>"],
+        ["Peru", -9.189967, -75.015152, "<h2>Peru</h2><p>Nuestros clientes:</p><ul><li>Fundacion Codespa</li><li>Media</li><li>Promuc</li><li>Fortalecer</li><li>Casa Los Andes</li><li>Financiera Credinka</li></ul>"],
+        ["Rwanda", -1.940278, 29.873888, "<h2>Rwanda</h2><p>Nuestros clientes:</p><ul><li>UFC UMUTANGUNA</li></ul>"],
+        ["Uganda", 1.373333, 32.290275, "<h2>Uganda</h2><p>Nuestros clientes:</p><ul><li>FINCA</li></ul>"]
     ];
 
     //create map object and set default positions and zoom level
@@ -74,7 +89,7 @@
     for (var i = 0; i < points.length; i++) {
         //L.marker([points[i][1], points[i][2]], { icon: Icon }).bindPopup(points[i][0]).addTo(map);
         // L.marker([points[i][1], points[i][2]], { icon: L.icon.glyph({ prefix: 'mdi', glyph: 'school' }) }).bindPopup(points[i][0]).addTo(map);
-        L.marker([points[i][1], points[i][2]]).bindPopup(points[i][0]).addTo(map);
+        L.marker([points[i][1], points[i][2]]).bindPopup(points[i][3]).addTo(map);
     }
 
 
